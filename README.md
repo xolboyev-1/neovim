@@ -4,8 +4,14 @@
 ![main](./assets/main.png)
 ![lazyProfile](./assets/lazyProfile.png)
 
-just copy to your .config directory.
+If you already have an existing configuration, make sure to back it up first.
 
 ```bash
-cp -r nvim ~/.config
+mv ~/.config/nvim ~/.config/nvim-backup
+```
+
+Then, just copy it into your `.config` directory.
+
+```bash
+git clone https://github.com/xolboyev-1/neovim.git && cp -r neovim/nvim ~/.config/nvim
 ```
